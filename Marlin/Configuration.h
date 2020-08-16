@@ -493,9 +493,9 @@
   #define DEFAULT_Ki 1.54
   #define DEFAULT_Kd 76.55
   // Ultimaker
-  #define DEFAULT_Kp 22.2
-  #define DEFAULT_Ki 1.08
-  #define DEFAULT_Kd 114
+// #define DEFAULT_Kp 22.2
+// #define DEFAULT_Ki 1.08
+// #define DEFAULT_Kd 114
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -1985,7 +1985,10 @@
 // RepRapDiscount FULL GRAPHIC Smart Controller
 // https://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
 //
-//#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+#define ST7920_DELAY_1 DELAY_NS(0) 
+#define ST7920_DELAY_2 DELAY_NS(250) 
+#define ST7920_DELAY_3 DELAY_NS(250)
 
 //
 // ReprapWorld Graphical LCD
@@ -2052,7 +2055,7 @@
 // MKS LCD12864A/B with graphic controller and SD support. Follows MKS_MINI_12864 pinout.
 // https://www.aliexpress.com/item/33018110072.html
 //
-#define MKS_LCD12864
+//#define MKS_LCD12864
 
 //
 // FYSETC variant of the MINI12864 graphic controller with SD support
