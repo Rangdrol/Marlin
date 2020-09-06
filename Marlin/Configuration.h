@@ -1184,7 +1184,7 @@
 #if ENABLED(FILAMENT_RUNOUT_SENSOR)
   #define FIL_RUNOUT_ENABLED_DEFAULT true // Enable the sensor on startup. Override with M412 followed by M500.
   #define NUM_RUNOUT_SENSORS   1          // Number of sensors, up to one per extruder. Define a FIL_RUNOUT#_PIN for each.
-  #define FIL_RUNOUT_STATE     HiGH        // Pin state indicating that filament is NOT present.
+  #define FIL_RUNOUT_STATE     HIGH        // Pin state indicating that filament is NOT present.
   #define FIL_RUNOUT_PULLUP               // Use internal pullup for filament runout pins.
   //#define FIL_RUNOUT_PULLDOWN           // Use internal pulldown for filament runout pins.
 
@@ -1990,10 +1990,10 @@
 // RepRapDiscount FULL GRAPHIC Smart Controller
 // https://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
 //
-//#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
-//#define ST7920_DELAY_1 DELAY_NS(0) 
-//#define ST7920_DELAY_2 DELAY_NS(250) 
-//#define ST7920_DELAY_3 DELAY_NS(250)
+#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+#define ST7920_DELAY_1 DELAY_NS(0) 
+#define ST7920_DELAY_2 DELAY_NS(250) 
+#define ST7920_DELAY_3 DELAY_NS(250)
 
 //
 // ReprapWorld Graphical LCD
@@ -2063,10 +2063,8 @@
 // MKS LCD12864A/B with graphic controller and SD support. Follows MKS_MINI_12864 pinout.
 // https://www.aliexpress.com/item/33018110072.html
 //
-#define MKS_LCD12864
-#define ST7920_DELAY_1 DELAY_NS(0)    //setting from reprapdiscount full graphic smart controller
-#define ST7920_DELAY_2 DELAY_NS(250) 
-#define ST7920_DELAY_3 DELAY_NS(250)
+//#define MKS_LCD12864
+
 //
 // FYSETC variant of the MINI12864 graphic controller with SD support
 // https://wiki.fysetc.com/Mini12864_Panel/
