@@ -1990,10 +1990,10 @@
 // RepRapDiscount FULL GRAPHIC Smart Controller
 // https://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
 //
-#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
-#define ST7920_DELAY_1 DELAY_NS(0) 
-#define ST7920_DELAY_2 DELAY_NS(250) 
-#define ST7920_DELAY_3 DELAY_NS(250)
+//#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+//#define ST7920_DELAY_1 DELAY_NS(0) 
+//#define ST7920_DELAY_2 DELAY_NS(250) 
+//#define ST7920_DELAY_3 DELAY_NS(250)
 
 //
 // ReprapWorld Graphical LCD
@@ -2063,8 +2063,10 @@
 // MKS LCD12864A/B with graphic controller and SD support. Follows MKS_MINI_12864 pinout.
 // https://www.aliexpress.com/item/33018110072.html
 //
-//#define MKS_LCD12864
-
+#define MKS_LCD12864
+#define ST7920_DELAY_1 DELAY_NS(0)    //setting from reprapdiscount full graphic smart controller
+#define ST7920_DELAY_2 DELAY_NS(250) 
+#define ST7920_DELAY_3 DELAY_NS(250)
 //
 // FYSETC variant of the MINI12864 graphic controller with SD support
 // https://wiki.fysetc.com/Mini12864_Panel/
@@ -2074,7 +2076,6 @@
 //#define FYSETC_MINI_12864_2_0    // Type A/B. Discreet RGB Backlight
 //#define FYSETC_MINI_12864_2_1    // Type A/B. NeoPixel RGB Backlight
 //#define FYSETC_GENERIC_12864_1_1 // Larger display with basic ON/OFF backlight.
-
 //
 // Factory display for Creality CR-10
 // https://www.aliexpress.com/item/32833148327.html
